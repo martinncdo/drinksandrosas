@@ -49,7 +49,7 @@ a {
 
 .logo {
   position: absolute;
-  background-image: url("./assets/img/drinkandrosaspng.png");
+  background-image: url("img/drinkandrosaspng.png");
   width: 35px;
   height: 55px;
   background-size: contain;
@@ -92,7 +92,7 @@ a {
 }
 
 .whatsapp-icon {
-  background-image: url("./assets/img/whatsapp.png");
+  background-image: url("img/whatsapp.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ a {
 }
 
 .instagram-icon {
-  background-image: url("./assets/img/instagram.png");
+  background-image: url("img/instagram.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ a {
     justify-content: start;
     align-items: center;
     grid-area: area2;
-    background-image: url("./assets/img/rosaswallpaper.png");
+    background-image: url("img/rosaswallpaper.png");
     background-position: center;
     background-repeat: no-repeat;
     padding: 1rem;
@@ -240,7 +240,7 @@ a {
     right: 2rem;
     height: 30px;
     width: 30px;
-    background-image: url("./assets/img/cartlogo.png");
+    background-image: url("img/cartlogo.png");
     background-size: contain;
     z-index: 99;
     transition: all .2s ease-out;
@@ -482,7 +482,7 @@ a {
     }
 
     .drinks-catalogue {
-      background-image: url("assets/img/rosaswallpaper.png");
+      background-image: url("img/rosaswallpaper.png");
       background-size: contain;
     }
 
