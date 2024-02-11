@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Roboto:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-navbar {
+  position: relative;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+}
+
+.options-navbar {
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  background-image: url("./assets/img/drinkandrosaspng.png");
+  width: 35px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brand-name {
+  margin-left: 4.5rem;
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.options-navbar > li {
+  margin: .5rem;
+
+}
+
+.a-navb {
+  transition: color .3s ease;
+  font-size: 9px;
+}
+
+.a-navb:hover {
+  color: white;
+}
+
+.social-media {
+  background-color: black;
+  top: 2rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  padding: .3rem;
+}
+
+.social-media > a {
+  margin: .5rem;
+  color: white;
+}
+
+.whatsapp-icon {
+  background-image: url("./assets/img/whatsapp.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  transition: all .5s ease;
+}
+
+.instagram-icon {
+  background-image: url("./assets/img/instagram.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  transition: all .5s ease;
+}
+
+.instagram-icon:hover, 
+  .whatsapp-icon:hover {
+    opacity: .5;
+  }
+
+.shop-of-drinks {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  width: 100%;
+  grid-template-rows: 2rem;
+  grid-template-columns: 18% 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "area1 area1 area1 area1 area1"
+  "area2 area3 area3 area3 area3"
+  "area2 area3 area3 area3 area3";
+}
+
+.navbar-type-of-drinks {
+  background-color: black;
+  display: flex;
+  grid-area: area1;
+  width: 100%;
+  height: 2rem;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.section-searcheres {
+  display: flex;
+  flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    grid-area: area2;
+    background-image: url("./assets/img/rosaswallpaper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .drinks-catalogue {
+    position: relative;
+    flex-direction: column;
+    grid-area: area3;
+    background-color: rgb(254, 254, 254);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navbar-type-of-drinks > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .typedrink {
+    color: rgba(255, 255, 255, 0.884);
+    font-size: 8px;
+    font-weight: 300;
+    font-family: "Roboto";
+    transition: all .5s ease;
+  }
+
+  .typedrink:hover {
+    color: black;
+  }
+
+  .searcher-drinks {
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .input-searcher {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.957);
+    border: 0;
+    padding: .8rem;
+    font-size: 6.5px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .input-searcher::placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.821);
+  }
+
+  .searcher-filter-drinks {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    height: 90vh;
+  }
+
+  .btn-filter {
+    margin-bottom: 1rem;
+    background-color: black;
+    color: rgba(255, 255, 255);
+    border: none;
+    font-size: 9px;
+    font-family: 'Roboto';
+  }
+
+  .line-filter {
+    margin-bottom: 4rem;
+  }
+  
+  .btn-filter:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn-filter:hover {
+    cursor: pointer;
+  }
+
+  .shop-cart {
+    justify-content: end;
+    display: flex;
+    width: 10%;
+    position: fixed;
+    margin-top: 1rem;
+    right: 2rem;
+    height: 30px;
+    width: 30px;
+    background-image: url("./assets/img/cartlogo.png");
+    background-size: contain;
+    z-index: 99;
+    transition: all .2s ease-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .bag {
+    position: absolute;
+    top: 2rem;
+    left: .55rem;
+    color: white;
+    font-size: 8px;
+    font-family: "Roboto";
+  }
+
+  .count-products {
+    font-size: 8px;
+  }
+
+  .shop-cart:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+
+  .shop-img {
+    opacity: 0;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    transition: all .5s ease-out;
+    opacity: 1;
+  }
+
+  .cards-drinks {
+    display: grid;
+    position: relative;
+    margin: 1rem 2rem 2rem 2rem;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .card-drink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .card-drink > * {
+    font-size: 9px;
+  }
+
+  .price {
+    color: black;
+    font-size: 8.5px;
+    font-weight: 500;
+  }
+
+  .btn-add-cart {
+    background-color: black;
+    border: none;
+    padding: .5rem;
+    color: white;
+    opacity: 1;
+    transition: all .2s ease;
+    font-size: 6.8px;
+    margin-top: .4rem;
+    font-family: "Roboto";
+  }
+
+  .btn-add-cart:hover {
+    cursor: pointer;
+  }
+
+  .payment {
+    position: absolute;
+    margin: 1rem;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 50%;
+    padding: 2rem;
+    overflow-y: scroll;
+  }
+
+  .product-payment {
+    margin-bottom: .5rem;
+    font-size: 8px;
+    font-weight: 100;
+    font-family: "Roboto";
+  }
+
+  .option-mark {
+    color: white;
+    font-family: "Roboto";
+    margin-bottom: .5rem;
+    transition: all .5s ease;
+    font-size: 8px;
+  }
+
+  .footer {
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    color: white;
+    padding: 1rem;
+    font-family: "Roboto";
+    font-size: 7px;
+  }
+
+  .option-mark:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .btns-payment {
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: end;
+  }
+
+  .btn-closepayment {
+    margin-left: .8rem;
+    font-weight: 100;
+    border: thin solid white !important;
+    padding: .5rem;
+  }
+
+  .pay-payment {
+    display: block;
+    margin-top: 1rem;
+    font-family: "Roboto";
+  }
+
+  .btnpay {
+    color: white;
+    background-color: black;
+    border: none;
+    border-bottom: thin solid white;
+    transition: all .3s ease;
+    font-size: 8px;
+  }
+
+  .btnpay:hover {
+    cursor: pointer;
+    font-family: "Roboto";
+    color: black;
+  }
+
+  .total-price {
+    font-family: "Roboto";
+    font-weight: bold;
+    background-color: white;
+    font-size: 9px;
+    color: black;
+    padding: .2rem;
+  }
+
+  .footer {
+    padding: 4rem;
+  }
+
+  .text-footer {
+    font-size: 7px;
+    margin: auto;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: .5rem;
+  }
+
+  .user-instagram {
+    color: rgb(0, 0, 0);
+    font-size: 7px;
+  }
+
+  .searcher-responsive {
+    display: none;
+  }
+
+
+  @media (max-width: 575.98px) { 
+    .filter-responsive {
+      background-color: rgb(255, 243, 243);
+      color: white;
+      font-family: "arial";
+      font-size: 7px;
+      padding: .9rem;
+      border-radius: .5rem;
+    }
+
+    .searcher-drinks {
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .searcher-responsive {
+      display: flex;
+      position: relative;
+      background-color: rgb(0, 0, 0);
+      margin: 2rem 2rem 0 2rem;
+      justify-content: space-around;
+      padding: 1rem 0 0 0;
+    }
+
+    .section-searcheres {
+      display: none;
+    }
+
+    .shop-of-drinks {
+      background-color: rgb(255, 255, 255);
+      display: grid;
+      width: 100%;
+      grid-template-rows: 4rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "area1 area1 area1 area1 area1"
+      "area3 area3 area3 area3 area3"
+      "area3 area3 area3 area3 area3";
+    }
+
+    .cards-drinks {
+      display: grid;
+      position: relative;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr 1fr 1fr;
+      background-color: rgb(255, 255, 255);
+      min-height: 100vh;
+      padding: 2rem;
+      margin-top: 0;
+    }
+
+    .drinks-catalogue {
+      background-image: url("assets/img/rosaswallpaper.png");
+      background-size: contain;
+    }
+
+    .card-drink {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-type-of-drinks {
+      background-color: black;
+      display: flex;
+      grid-area: area1;
+      width: 100%;
+      height: 4rem;
+      font-size: 10px;
+      font-weight: 100;
+    }
+
+    .payment {
+      position: fixed;
+      z-index: 9999;
+      background-color: black;
+      color: white;
+      width: 90%;
+      height: 50%;
+      margin-left: 2rem;
+      padding: 2rem;
+      overflow-y: scroll;
+    }
+
+
+    .main-navbar {
+      height: 10rem;
+    }
+
+    .total-price {
+      font-family: "Roboto";
+      font-weight: 100;
+      background-color: white;
+      font-size: 9px;
+      color: black;
+      padding: .2rem;
+    }
+
+    .shop-cart {
+      margin-top: 9rem;
+      right: 3rem;
+    }
+
+    .typedrink {
+      font-size: 11px;;
+    }
+
+    .searcher-filter-drinks {
+      position: absolute;
+      z-index: 999;
+      margin-bottom: 2rem;
+    }
+
+    .btn-filter-responsive {
+      position: relative;
+      bottom: .3rem;
+      left: .5rem;
+    }
+
+    .input-searcher {
+      border: thin solid white;
+    }
+
+    .option-mark:hover {
+      color: rgb(162, 73, 73);
+    }
+
+    .option-mark:active {
+      color: white;
+    }
+
+    .close-filter-responsive {
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
+      font-family: "roboto";
+      font-size: 6px;
+      border-bottom: thin solid white;
+      margin-bottom: 2rem;
+      padding: .5rem;
+      width: 20%;
+      font-size: 9px;
+      position: relative;
+      z-index: 9997;
+    }
+   }
