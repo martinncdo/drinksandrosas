@@ -218,7 +218,7 @@ function CardDrink({id, src, title, price, countProduct, setCountProducts, setAc
   return (
     <div className="card-drink">
       <img src={src} width="100px" height="100px" alt="" />
-      <p>{title}</p>
+      <p className="title-product">{title}</p>
       <p className="price">${price} ARS</p>
       <button data-id={id} className="btn-add-cart" onClick={(e) => addProductToBag(e)}>Add to bag</button>
     </div>

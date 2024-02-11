@@ -95,8 +95,8 @@ a {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 12px;
-  width: 12px;
+  height: 24px;
+  width: 24px;
   transition: all .5s ease;
 }
 
@@ -105,8 +105,8 @@ a {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 12px;
-  width: 12px;
+  height: 24px;
+  width: 24px;
   transition: all .5s ease;
 }
 
@@ -563,6 +563,11 @@ a {
       font-size: 14px;      
       position: relative;
       z-index: 9997;
+    }
+
+    .title-product {
+      font-size: 12px;
+      text-align: center;
     }
 
     .options-navbar {
