@@ -236,13 +236,13 @@ export default function App() {
 }
 
 const PRODUCTS = [
-  {id: 1, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec X750", src: "./src/assets/img/redwinemalbec.webp"},
-  {id: 2, type: "beer", mark: "andes", price: 1150, title: "Andes Beer X473", src: "./src/assets/img/andesrubia.webp"},
-  {id: 3, type: "beer", mark: "corona", price: 1200, title: "Corona Beer X330", src: "./src/assets/img/corona330.webp"},
-  {id: 4,type: "beer", mark: "corona", price: 1800, title: "Corona Beer X710", src: "./src/assets/img/corona710.webp"},
-  {id: 5, type: "wine", mark: "sauvignon", price: 3000, title: "Luigi Bosca Sauvignon X750", src: "./src/assets/img/wineluigibosca.webp"},
-  {id: 6, type: "fernet", mark: "branca", price: 7000, title: "Fernet Branca X750", src: "./src/assets/img/fernet.webp"},
-  {id: 7, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec X750", src: "./src/assets/img/redwinemalbec.webp"}
+  {id: 1, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec X750", src: "assets/img/redwinemalbec.webp"},
+  {id: 2, type: "beer", mark: "andes", price: 1150, title: "Andes Beer X473", src: "assets/img/andesrubia.webp"},
+  {id: 3, type: "beer", mark: "corona", price: 1200, title: "Corona Beer X330", src: "assets/img/corona330.webp"},
+  {id: 4,type: "beer", mark: "corona", price: 1800, title: "Corona Beer X710", src: "assets/img/corona710.webp"},
+  {id: 5, type: "wine", mark: "sauvignon", price: 3000, title: "Luigi Bosca Sauvignon X750", src: "assets/img/wineluigibosca.webp"},
+  {id: 6, type: "fernet", mark: "branca", price: 7000, title: "Fernet Branca X750", src: "assets/img/fernet.webp"},
+  {id: 7, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec X750", src: "assets/img/redwinemalbec.webp"}
 ]
 
 const MARKS = {
