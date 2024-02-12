@@ -139,7 +139,7 @@ function DrinksCatalogue({viewDrinks, searchText, setSearchText, filterMark, fil
        return
       }
 
-      return (<CardDrink id={product.id} key={product.id} title={product.title} price={product.price} src={product.src} countProduct={countProducts} setCountProducts={setCountProducts} setActiveBag={setActiveBag} listProducts={listProducts} setListProducts={setListProducts}></CardDrink>)
+      return (<CardDrink id={product.id} key={product.id} title={product.title} price={product.price} src={product.src} lts={product.lts} countProduct={countProducts} setCountProducts={setCountProducts} setActiveBag={setActiveBag} listProducts={listProducts} setListProducts={setListProducts}></CardDrink>)
   });
   
   function returnTotal() {
@@ -207,7 +207,7 @@ function ShopCart({countProducts, activeBag, listProducts,
   );
 }
 
-function CardDrink({id, src, title, price, countProduct, setCountProducts, setActiveBag, listProducts, setListProducts}) {
+function CardDrink({id, src, title, price, lts, countProduct, setCountProducts, setActiveBag, listProducts, setListProducts}) {
   function addProductToBag(e) {
    setCountProducts(countProduct + 1);
    setActiveBag(true)
@@ -219,6 +219,7 @@ function CardDrink({id, src, title, price, countProduct, setCountProducts, setAc
     <div className="card-drink">
       <img src={src} width="100px" height="100px" alt="" />
       <p className="title-product">{title}</p>
+      <p className="title-product">{lts}</p>
       <p className="price">${price} ARS</p>
       <button data-id={id} className="btn-add-cart" onClick={(e) => addProductToBag(e)}>Add to bag</button>
     </div>
@@ -236,13 +237,13 @@ export default function App() {
 }
 
 const PRODUCTS = [
-  {id: 1, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec X750", src: "assets/img/redwinemalbec.webp"},
-  {id: 2, type: "beer", mark: "andes", price: 1150, title: "Andes Beer X473", src: "assets/img/andesrubia.webp"},
-  {id: 3, type: "beer", mark: "corona", price: 1200, title: "Corona Beer X330", src: "assets/img/corona330.webp"},
-  {id: 4,type: "beer", mark: "corona", price: 1800, title: "Corona Beer X710", src: "assets/img/corona710.webp"},
-  {id: 5, type: "wine", mark: "sauvignon", price: 3000, title: "Luigi Bosca Sauvignon X750", src: "assets/img/wineluigibosca.webp"},
-  {id: 6, type: "fernet", mark: "branca", price: 7000, title: "Fernet Branca X750", src: "assets/img/fernet.webp"},
-  {id: 7, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec X750", src: "assets/img/redwinemalbec.webp"}
+  {id: 1, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec", lts: "X750", src: "assets/img/redwinemalbec.webp"},
+  {id: 2, type: "beer", mark: "andes", price: 1150, title: "Andes Beer", lts: "X473", src: "assets/img/andesrubia.webp"},
+  {id: 3, type: "beer", mark: "corona", price: 1200, title: "Corona Beer", lts: "X330", src: "assets/img/corona330.webp"},
+  {id: 4,type: "beer", mark: "corona", price: 1800, title: "Corona Beer", lts: "X710", src: "assets/img/corona710.webp"},
+  {id: 5, type: "wine", mark: "sauvignon", price: 3000, title: "Luigi Bosca Sauvignon", lts: "X810", src: "assets/img/wineluigibosca.webp"},
+  {id: 6, type: "fernet", mark: "branca", price: 7000, title: "Fernet Branca", lts: "X750", src: "assets/img/fernet.webp"},
+  {id: 7, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec", lts: "X750", src: "assets/img/redwinemalbec.webp"}
 ]
 
 const MARKS = {

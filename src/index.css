@@ -234,10 +234,10 @@ a {
     width: 10%;
     position: fixed;
     margin-top: 1rem;
-    right: 2rem;
-    height: 30px;
-    width: 30px;
-    background-image: url("img/cartlogo.png");
+    right: 3rem;
+    height: 50px;
+    width: 50px;
+    background-image: url("public/assets/img/cartlogo.png");
     background-size: contain;
     z-index: 99;
     transition: all .2s ease-out;
@@ -253,13 +253,18 @@ a {
   .bag {
     position: absolute;
     top: 2rem;
-    left: .55rem;
+    left: .75rem;
     color: white;
-    font-size: 16px;    font-family: "Roboto";
+    font-size: 10px;    
+    font-family: "Roboto";
   }
 
   .count-products {
-    font-size: 16px;  }
+    font-size: 12px;  
+    position: relative;
+    bottom: .2rem;
+    left: .2rem;
+  }
 
   .shop-cart:hover {
     opacity: .8;
@@ -521,7 +526,7 @@ a {
 
     .shop-cart {
       margin-top: 9rem;
-      right: 3rem;
+      right: 1rem;
     }
 
     .typedrink {
@@ -580,5 +585,20 @@ a {
 
     .btn-filter {
       margin-top: 4rem;
+    }
+
+    .bag {
+      position: absolute;
+      color: white;
+      font-size: 10px;    
+      font-family: "Roboto";
+    }
+
+    .btn-closepayment {
+      margin-bottom: 1rem;
+    }
+
+    .btn-restartpayment {
+      margin-bottom: 1rem;
     }
    }
