@@ -332,7 +332,6 @@ a {
 
   .payment {
     position: absolute;
-    right: .5rem;
     top: 1rem;
     z-index: 9999;
     background-color: black;
