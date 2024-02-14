@@ -58,9 +58,9 @@ a {
 }
 
 .brand-name {
-  margin-left: 4.5rem;
-  margin-top: 1rem;
-  font-size: 16px;
+  margin-left: 4.7rem;
+  margin-top: .5rem;
+  font-size: 18px;
 }
 
 .options-navbar > li {
@@ -68,9 +68,15 @@ a {
 
 }
 
+.title-product {
+  font-weight: bold;
+}
+
 .a-navb {
   transition: color .3s ease;
-  font-size: 16px;}
+  font-size: 16px;
+  font-family: "Roboto";
+}
 
 .a-navb:hover {
   color: white;
@@ -282,7 +288,7 @@ a {
   .cards-drinks {
     display: grid;
     position: relative;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: .5rem .5rem .5rem .5rem;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr;
     background-color: rgb(255, 255, 255);
@@ -297,12 +303,15 @@ a {
   }
 
   .card-drink > * {
-    font-size: 16px;  }
+    font-size: 16px;  
+    font-family: "Roboto";
+  }
 
   .price {
     color: black;
     font-size: 16px;
-    margin-top: .5rem;
+    font-family: "Roboto";
+    margin: .3rem 0;
   }
 
   .btn-add-cart {
@@ -312,7 +321,7 @@ a {
     color: white;
     opacity: 1;
     transition: all .2s ease;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: .4rem;
     font-family: "Roboto";
   }
@@ -323,11 +332,11 @@ a {
 
   .payment {
     position: absolute;
-    margin: 1rem;
+    right: 1.2rem;
     z-index: 9999;
     background-color: black;
     color: white;
-    width: 80%;
+    width: 1000%;
     height: 50%;
     padding: 2rem;
     overflow-y: scroll;
@@ -445,7 +454,7 @@ a {
       display: flex;
       position: relative;
       background-color: rgb(0, 0, 0);
-      margin: 1rem 1rem 0 1rem;
+      margin: .5rem .5rem 0 .5rem;
       justify-content: space-around;
       padding: 1rem 0 0 0;
     }
@@ -571,9 +580,9 @@ a {
     }
 
     .title-product {
-      font-size: 16px;
+      font-size: 12px;
       text-align: center;
-      font-family: sans-serif;
+      font-family: "Roboto";
       font-weight: bold;
     }
 
@@ -587,6 +596,7 @@ a {
 
     .a-navb {
       font-size: 14px;
+      font-family: "Roboto";
     }
 
     .btn-filter {
