@@ -301,8 +301,8 @@ a {
 
   .price {
     color: black;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    margin-top: .5rem;
   }
 
   .btn-add-cart {
@@ -571,8 +571,10 @@ a {
     }
 
     .title-product {
-      font-size: 12px;
+      font-size: 16px;
       text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
     }
 
     .options-navbar {

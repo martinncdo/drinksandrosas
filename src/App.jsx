@@ -217,7 +217,7 @@ function CardDrink({id, src, title, price, lts, countProduct, setCountProducts, 
 
   return (
     <div className="card-drink">
-      <img src={src} width="100px" height="100px" alt="" />
+      <img src={src} width="170px" height="170px" alt="" />
       <p className="title-product">{title}</p>
       <p className="title-product">{lts}</p>
       <p className="price">${price} ARS</p>
