@@ -241,8 +241,8 @@ a {
     position: fixed;
     margin-top: 1rem;
     right: 3rem;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     background-image: url("img/cartlogo.png");
     background-size: contain;
     z-index: 99;
@@ -258,15 +258,15 @@ a {
 
   .bag {
     position: absolute;
-    top: 2rem;
-    left: .75rem;
+    top: 3rem;
+    left: 1.1rem;
     color: white;
-    font-size: 10px;    
+    font-size: 14px;    
     font-family: "Roboto";
   }
 
   .count-products {
-    font-size: 12px;  
+    font-size: 14px;  
     position: relative;
     bottom: .2rem;
     left: .2rem;
@@ -487,7 +487,7 @@ a {
     }
 
     .drinks-catalogue {
-      background-image: url("img/rosaswallpaper.png");
+      background-image: url("public/assets/img/rosaswallpaper.png");
       background-size: contain;
     }
 
@@ -625,6 +625,43 @@ a {
       width: 95.7%;
       height: 50%;
       padding: 2rem;
+      right: .5rem;
       overflow-y: scroll;
+    }
+
+    .shop-cart {
+      justify-content: end;
+      display: flex;
+      width: 10%;
+      position: fixed;
+      margin-top: 7.5rem;
+      right: 1rem;
+      height: 50px;
+      width: 50px;
+      background-image: url("public/assets/img/cartlogo.png");
+      background-size: contain;
+      z-index: 99;
+      transition: all .2s ease-out;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .shop-cart:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+
+    .bag {
+      position: absolute;
+      top: 2rem;
+      left: .6rem;
+      color: white;
+      font-size: 12px;    
+      font-family: "Roboto";
     }
    }
