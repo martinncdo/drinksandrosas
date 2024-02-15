@@ -163,7 +163,6 @@ a {
     grid-area: area3;
     background-color: rgb(254, 254, 254);
     width: 100%;
-    padding: 0 0 2rem 0;
     height: 100%;
   }
   
@@ -483,12 +482,12 @@ a {
       grid-template-rows: 1fr 1fr 1fr;
       background-color: rgb(255, 255, 255);
       min-height: 100vh;
-      padding: 2rem;
+      padding: 2rem 2rem 4rem 2rem;
       margin-top: 0;
     }
 
     .drinks-catalogue {
-      background-image: url("img/rosaswallpaper.png");
+      background-image: url("public/assets/img/rosaswallpaper.png");
       background-size: contain;
     }
 
