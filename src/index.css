@@ -163,6 +163,7 @@ a {
     grid-area: area3;
     background-color: rgb(254, 254, 254);
     width: 100%;
+    padding: 0 0 2rem 0;
     height: 100%;
   }
   
