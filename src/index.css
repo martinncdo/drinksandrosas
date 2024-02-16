@@ -509,19 +509,6 @@ a {
       font-weight: 100;
     }
 
-    .payment {
-      position: fixed;
-      z-index: 9999;
-      background-color: black;
-      color: white;
-      width: 90%;
-      height: 50%;
-      margin-left: 2rem;
-      padding: 2rem;
-      overflow-y: scroll;
-    }
-
-
     .main-navbar {
       height: 10rem;
     }
@@ -623,10 +610,11 @@ a {
       position: absolute;
       background-color: black;
       color: white;
-      width: 95.7%;
-      height: 50%;
+      width: 96%;
+      height: 30%;
+      margin-top: 1rem;
+      left: .5rem;
       padding: 2rem;
-      right: .5rem;
       overflow-y: scroll;
     }
 
