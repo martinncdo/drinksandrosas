@@ -288,10 +288,11 @@ a {
   .cards-drinks {
     display: grid;
     position: relative;
-    margin: .5rem .5rem .5rem .5rem;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr;
     background-color: rgb(255, 255, 255);
+    row-gap: 2.5rem;
+    padding: 2.5rem;
   }
 
   .card-drink {
@@ -299,7 +300,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
   }
 
   .card-drink > * {
@@ -358,7 +358,6 @@ a {
 
   .footer {
     background-color: rgb(0, 0, 0);
-    height: 100px;
     color: white;
     padding: 1rem;
     font-family: "Roboto";
@@ -413,7 +412,7 @@ a {
   }
 
   .footer {
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .text-footer {
