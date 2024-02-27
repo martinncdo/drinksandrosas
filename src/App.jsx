@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 function MainNavbar() {
   return (
@@ -39,14 +40,16 @@ function ShopOfDrinks() {
 
 function NavbarTypeOfDrinks({setViewDrinks, setFilterMark, setFilterPrice}) {
   return (
-    <div className="navbar-type-of-drinks">
+    <motion.div className="navbar-type-of-drinks"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}>
       <ul>
         <li><a href="#" onClick={() => {setViewDrinks("wine"), setFilterMark(""), setFilterPrice(null)}} className="typedrink">WINE</a></li>
         <li><a href="#" onClick={() => {setViewDrinks("beer"), setFilterMark(""), setFilterPrice(null)}} className="typedrink">BEER</a></li>
         <li><a href="#" onClick={() => {setViewDrinks("fernet"), setFilterMark(""), setFilterPrice(null)}} className="typedrink">FERNET</a></li>
         <li><a href="#" onClick={() => {setViewDrinks("all"), setFilterMark(""), setFilterPrice(null)}} className="typedrink">ALL</a></li>
       </ul>
-    </div>
+    </motion.div>
   );
 }
 
@@ -86,9 +89,12 @@ function SearcherFilterDrinks({viewDrinks, setFilterMark, setFilterPrice}) {
           setDisplayOptionsMark(!displayOptionsMark)}}>Filter for Mark</button>
         {displayOptionsMark && <>
           {MARKS[viewDrinks].map(el => {
-            return (<div onClick={(e) => {
+            return (<motion.div 
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              onClick={(e) => {
               setFilterMark(e.target.textContent.toLowerCase())}
-          } className="option-mark">{el} <br></br></div>)
+          } className="option-mark">{el} <br></br></motion.div>)
           })}
         </>}
         <hr className="line-filter"/>
@@ -96,10 +102,12 @@ function SearcherFilterDrinks({viewDrinks, setFilterMark, setFilterPrice}) {
           setDisplayOptionsPrice(!displayOptionsPrice)
         }>Filter for Price</button>
         {displayOptionsPrice && <>
-          <>
+          <motion.div
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}>
             <div className="option-mark" onClick={() => setFilterPrice(1)}>Up to $3000</div>
             <div className="option-mark" onClick={() => setFilterPrice(2)}>$3000 to $7000</div>
-          </>
+          </motion.div>
         </>}
         <hr className="line-filter"/>
       </div>
@@ -216,13 +224,16 @@ function CardDrink({id, src, title, price, lts, countProduct, setCountProducts, 
   };
 
   return (
-    <div className="card-drink">
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    className="card-drink">
       <img src={src} width="170px" height="170px" alt="" />
       <p className="title-product">{title}</p>
       <p className="title-product">{lts}</p>
       <p className="price">${price} ARS</p>
       <button data-id={id} className="btn-add-cart" onClick={(e) => addProductToBag(e)}>Add to bag</button>
-    </div>
+    </motion.div>
   )
 }
 
