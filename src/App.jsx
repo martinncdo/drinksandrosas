@@ -253,8 +253,7 @@ const PRODUCTS = [
   {id: 3, type: "beer", mark: "corona", price: 1200, title: "Corona Beer", lts: "X330", src: "assets/img/corona330.webp"},
   {id: 4,type: "beer", mark: "corona", price: 1800, title: "Corona Beer", lts: "X710", src: "assets/img/corona710.webp"},
   {id: 5, type: "wine", mark: "sauvignon", price: 3000, title: "Luigi Bosca Sauvignon", lts: "X810", src: "assets/img/wineluigibosca.webp"},
-  {id: 6, type: "fernet", mark: "branca", price: 7000, title: "Fernet Branca", lts: "X750", src: "assets/img/fernet.webp"},
-  {id: 7, type: "wine", mark: "malbec", price: 3000, title: "Gran Medalla Malbec", lts: "X750", src: "assets/img/redwinemalbec.webp"}
+  {id: 6, type: "fernet", mark: "branca", price: 7000, title: "Fernet Branca", lts: "X750", src: "assets/img/fernet.webp"}
 ]
 
 const MARKS = {
