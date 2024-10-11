@@ -493,7 +493,6 @@ a {
     .drinks-catalogue {
       background-image: url("img/rosaswallpaper.png");
       background-size: contain;
-      padding: 1.5rem;
       padding-bottom: 2rem;
       padding-top: 1.5rem;
     }
@@ -618,7 +617,7 @@ a {
       background-color: black;
       color: white;
       width: 96%;
-      height: 97.5%;
+      height: 98%;
       margin-top: 1rem;
       left: .5rem;
       overflow-y: scroll;
