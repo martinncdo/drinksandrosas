@@ -205,7 +205,6 @@ function ShopCart({countProducts, activeBag, listProducts,
 
   function openBag() {
     setOpenPayment(!openPayment);
-    window.scrollTo({ top: 15, behavior: 'smooth' });
   }
 
   return (
