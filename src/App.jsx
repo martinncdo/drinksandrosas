@@ -162,7 +162,7 @@ function DrinksCatalogue({viewDrinks, searchText, setSearchText, filterMark, fil
     <div className="drinks-catalogue">
       { openPayment && 
       <div className="payment">
-        <div className="btns-payment">
+        <div className="btns-payment" id="pay">
           <button className="btn-restartpayment btnpay" onClick={() => {
             setListProducts([])
             setCountProducts(0)
@@ -205,6 +205,7 @@ function ShopCart({countProducts, activeBag, listProducts,
 
   function openBag() {
     setOpenPayment(!openPayment);
+    window.scrollTo({ top: 15, behavior: 'smooth' });
   }
 
   return (
