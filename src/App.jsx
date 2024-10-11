@@ -65,7 +65,7 @@ function SectionOfSearcheres({viewDrinks, setSearchText, setFilterMark, setFilte
 function Footer() {
   return (
     <div className="footer">
-      <p className="text-footer">Hecho por mí - <a href="" className="user-instagram">@martincdo</a></p>
+      
     </div>
   )
 }
@@ -228,7 +228,7 @@ function CardDrink({id, src, title, price, lts, countProduct, setCountProducts, 
     initial={{opacity: 0}}
     animate={{opacity: 1}}
     className="card-drink">
-      <img src={src} width="170px" height="170px" alt="" />
+      <img src={src} width="200px" height="200px" alt="" />
       <p className="title-product">{title}</p>
       <p className="title-product">{lts}</p>
       <p className="price">${price} ARS</p>

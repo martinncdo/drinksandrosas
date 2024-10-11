@@ -49,7 +49,7 @@ a {
 
 .logo {
   position: absolute;
-  background-image: url("img/drinkandrosaspng.png");
+  background-image: url("public/assets/img/drinkandrosaspng.png");
   width: 85px;
   height: 85px;
   background-size: contain;
@@ -97,7 +97,7 @@ a {
 }
 
 .whatsapp-icon {
-  background-image: url("img/whatsapp.png");
+  background-image: url("public/assets/img/whatsapp.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -106,8 +106,9 @@ a {
   transition: all .5s ease;
 }
 
+/* img/instagram.png */
 .instagram-icon {
-  background-image: url("img/instagram.png");
+  background-image: url("public/assets/img/instagram.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -149,7 +150,7 @@ a {
     justify-content: start;
     align-items: center;
     grid-area: area2;
-    background-image: url("img/rosaswallpaper.png");
+    background-image: url("public/assets/img/rosaswallpaper.png");
     background-position: center;
     padding: 1rem;
     width: 100%;
@@ -194,7 +195,7 @@ a {
     color: rgba(255, 255, 255, 0.957);
     border: 0;
     padding: .8rem;
-    font-size: 12px;
+    font-size: .8rem;
     width: 100%;
     margin: auto;
   }
@@ -242,7 +243,7 @@ a {
     right: 3rem;
     height: 70px;
     width: 70px;
-    background-image: url("img/cartlogo.png");
+    background-image: url("public/assets/img/cartlogo.png");
     background-size: contain;
     z-index: 99;
     transition: all .2s ease-out;
@@ -316,7 +317,7 @@ a {
   .btn-add-cart {
     background-color: black;
     border: none;
-    padding: .5rem;
+    padding: .9rem;
     color: white;
     opacity: 1;
     transition: all .2s ease;
@@ -337,7 +338,7 @@ a {
     background-color: black;
     color: white;
     width: 98%;
-    height: 50%;
+    height: 95%;
     padding: 2rem;
     overflow-y: scroll;
   }
@@ -486,7 +487,7 @@ a {
     }
 
     .drinks-catalogue {
-      background-image: url("img/rosaswallpaper.png");
+      background-image: url("public/assets/img/rosaswallpaper.png");
       background-size: contain;
       padding-bottom: 2rem;
       padding-top: 1.5rem;
@@ -532,6 +533,7 @@ a {
 
     .searcher-filter-drinks {
       position: absolute;
+      height: auto;
       z-index: 999;
       margin-bottom: 2rem;
     }
@@ -568,7 +570,7 @@ a {
     }
 
     .title-product {
-      font-size: 12px;
+      font-size: .9rem;
       text-align: center;
       font-family: "Roboto";
       font-weight: bold;
@@ -611,10 +613,9 @@ a {
       background-color: black;
       color: white;
       width: 96%;
-      height: 30%;
+      height: 97.5%;
       margin-top: 1rem;
       left: .5rem;
-      padding: 2rem;
       overflow-y: scroll;
     }
 
@@ -627,7 +628,7 @@ a {
       right: 2rem;
       height: 50px;
       width: 50px;
-      background-image: url("img/cartlogo.png");
+      background-image: url("public/assets/img/cartlogo.png");
       background-size: contain;
       z-index: 99;
       transition: all .2s ease-out;
